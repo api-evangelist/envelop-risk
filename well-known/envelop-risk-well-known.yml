@@ -1,0 +1,18 @@
+generated: '2026-07-19'
+method: searched
+host: https://enveloprisk.com
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  file: envelop-risk-security.txt
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: 'security.txt is served from the apex host (enveloprisk.com); the www host
+  returns 404 for /.well-known/*. No OIDC/OAuth/API-catalog/AI-plugin discovery
+  documents are published (no public API surface).'

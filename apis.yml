@@ -1,8 +1,27 @@
 aid: envelop-risk
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/envelop-risk.png
 name: Envelop Risk
-description: 'Envelop Risk is a company surfaced as a portfolio company of softbank-vision-fund and added
-  to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Envelop Risk is a technology-led reinsurance underwriting and analytics
+  firm specializing in cyber and other complex, emerging risks. The company combines
+  actuarial science, machine learning, and cyber threat intelligence to model, price,
+  and underwrite cyber (re)insurance for insurers, MGAs, and capital-market partners.
+  Its platforms include CyberTooth (cyber risk modeling and augmented underwriting),
+  Cyber Threat Intelligence, Envelop Capital Markets, and Envelop Risk Solutions
+  (product development, analytics, modeling support). Backed by SoftBank Vision Fund,
+  Envelop Risk surpassed a $1bn gross-written-premium milestone. This API Evangelist
+  profile was created as a portfolio-company lead; the company does not publish a
+  public developer portal, API, or SDKs at this time.'
 url: https://raw.githubusercontent.com/api-evangelist/envelop-risk/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +31,43 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Fintech
+- Insurance
+- Reinsurance
+- Cyber Risk
+- Underwriting
+- Analytics
+- Machine Learning
+- Cyber Insurance
+- Insurtech
 apis: []
+common:
+- type: VulnerabilityDisclosure
+  url: security/envelop-risk-vulnerability-disclosure.yml
+- type: Security
+  url: security/envelop-risk-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/envelop-risk-domain-security.yml
+- type: WellKnown
+  url: well-known/envelop-risk-well-known.yml
+- type: SecurityTxt
+  url: well-known/envelop-risk-security.txt
+- type: Website
+  url: https://www.enveloprisk.com/
+- type: Blog
+  url: https://www.enveloprisk.com/resources/?_categories=blog
+- type: PrivacyPolicy
+  url: https://www.enveloprisk.com/privacy-policy/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
