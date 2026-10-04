@@ -51,7 +51,7 @@ tags:
 - Cyber Risk
 - Underwriting
 - Analytics
-- Machine-Learning
+- Machine Learning
 - Cyber Insurance
 - Insurtech
 tags_raw:
@@ -65,6 +65,7 @@ tags_raw:
 - Machine Learning
 - Cyber Insurance
 - Insurtech
+- Machine-Learning
 apis: []
 common:
 - type: VulnerabilityDisclosure
